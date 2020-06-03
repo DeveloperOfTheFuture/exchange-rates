@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #5fbaa7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.money-img {
+  width: 200px;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  font-size: 12px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.currency {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.currency select {
+  font-size: 16px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 10px 20px 10px 5px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  background-color: transparent;
+  background-image: url('./img/arrow.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px;
+}
+
+.currency input {
+  font-size: 30px;
+  text-align: right;
+  border: 0;
+  background-color: transparent;
+}
+
+.swap-rate-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rate {
+  font-size: 14px;
+  color: var(--primary-color);
+  padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
